@@ -5,3 +5,5 @@ Pass in sys.argv when initializing QApplication to use command-line args, otherw
 Every app needs at least one QMainWindow (app exits when last main window is closed)
 Write your own Window class that inherits from QMainWindow
 Must window.show(), otherwise the window will be invisible
+---
+All top-level widgets are windows (no parent, not nested)

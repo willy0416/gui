@@ -1,0 +1,14 @@
+Slots receive signals
+Signals can send data regarding what just happened
+You can connect Qt widgets directly to one another rather than using a signal-handling function
+---
+Mouse move events are only registered if the mouse is pressed, unless you have set self.setMouseTracking(True)
+Typically to register a click from a user you should watch for both the mouse down and the release
+---
+Context menus appear when right-clicking on a window
+---
+You can trigger default behavior with super() parent implementation and subsequently intercept the event
+Parent of a widget in the context of the layout is found by .parent()
+Events are passed to the uppermost widget in the UI (i.e. if you click a button in a window, the button receives the event first)
+Event bubbles up until it can be handled or reaches the main window
+Can mark an event as handled in an event handler by calling e.accept() or unhandled by e.ignore() to bubble up
