@@ -1,0 +1,7 @@
+QApplication class holds the event loop (only 1 instance required)
+qapp_instance.exec_() begins event loop
+Pass in sys.argv when initializing QApplication to use command-line args, otherwise use []
+---
+Every app needs at least one QMainWindow (app exits when last main window is closed)
+Write your own Window class that inherits from QMainWindow
+Must window.show(), otherwise the window will be invisible
