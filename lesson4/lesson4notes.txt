@@ -1,0 +1,1 @@
+You need a dummy QWidget to hold the layout if you want to add layouts to a window
