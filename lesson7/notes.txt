@@ -1,0 +1,1 @@
+Can make sense to create windows at start-up and show when needed (vs creating the windows when you want to show them)
