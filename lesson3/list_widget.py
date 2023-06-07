@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QMainWindow, QListWidget
+from PyQt5.QtWidgets import QMainWindow, QListWidget, QApplication
 
 # similar to QComboBox except options are presented in a scrollable list & multiple selection is possible
 
@@ -23,3 +23,10 @@ class MainWindow(QMainWindow):
 
     def text_changed(self, s): # s is a str
         print(s)
+
+app = QApplication([])
+
+window = MainWindow()
+window.show()
+
+app.exec_()

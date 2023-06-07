@@ -1,0 +1,5 @@
+Can't restore a toolbar after removing it, so...
+    1. Keep one toolbar un-removeable OR
+    2. Provide an alternative interface in the menus to turn toolbars on and off
+
+With QAction, you can define a triggered action (i.e. cutting text) and add it to multiple UI elements (i.e. menu and toolbar)

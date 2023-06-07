@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QMainWindow, QComboBox
+from PyQt5.QtWidgets import QMainWindow, QComboBox, QApplication
 
 class MainWindow(QMainWindow):
 
@@ -28,3 +28,10 @@ class MainWindow(QMainWindow):
 
     def text_changed(self, s): # s is a str
         print(s)
+
+app = QApplication([])
+
+window = MainWindow()
+window.show()
+
+app.exec_()
