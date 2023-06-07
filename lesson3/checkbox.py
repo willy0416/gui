@@ -21,7 +21,7 @@ class MainWindow(QMainWindow):
         widget.stateChanged.connect(self.show_state)
 
         self.setCentralWidget(widget)
-
+        # can set checkbox state using .setChecked or .setCheckState (latter accepts Qt.Un/Partially/Checked flags as well)
 
     def show_state(self, s):
         print(s == Qt.Checked)

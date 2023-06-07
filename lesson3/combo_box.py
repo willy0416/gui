@@ -8,13 +8,17 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("My App")
 
         widget = QComboBox()
-        widget.addItems(["One", "Two", "Three"])
+        widget.addItems(["One", "Two", "Three"]) # items added in this order
 
         # Sends the current index (position) of the selected item.
         widget.currentIndexChanged.connect( self.index_changed )
 
         # There is an alternate signal to send the text.
         widget.currentTextChanged.connect( self.text_changed )
+
+        # To make editable: widget.setEditable(True)
+            # can use a flag instead to control how the custom inserts occur (QComboBox.NoInsert, InsertAtTop, InsertAtCurrent, InsertAtBottom, InsertAfterCurrent, InsertBeforeCurrent, InsertALphabetically)
+            # can also do widget.setMaxCount(10)
 
         self.setCentralWidget(widget)
 

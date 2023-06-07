@@ -19,7 +19,6 @@ class MainWindow(QMainWindow):
         font.setPointSize(30)
         label.setFont(font)
         label.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
-        # label.setScaledContents(True)
         self.setCentralWidget(label)
 
 app = QApplication(sys.argv)

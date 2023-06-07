@@ -19,6 +19,8 @@ class MainWindow(QMainWindow):
         widget.valueChanged.connect(self.value_changed)
         widget.textChanged.connect(self.value_changed_str)
 
+        # widget.lineEdit().setReadOnly(True) # if you want edits to only be done through the controls and not by typing
+        
         self.setCentralWidget(widget)
 
     def value_changed(self, i):
