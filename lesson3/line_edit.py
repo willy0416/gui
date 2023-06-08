@@ -38,3 +38,8 @@ class MainWindow(QMainWindow):
     def text_edited(self, s):
         print("Text edited...")
         print(s)
+
+app = QApplication([])
+window = MainWindow()
+window.show()
+app.exec_()
